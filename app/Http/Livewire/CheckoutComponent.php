@@ -11,3 +11,4 @@ class CheckoutComponent extends Component
         return view('livewire.checkout-component')->layout("layouts.base");
     }
 }
+//

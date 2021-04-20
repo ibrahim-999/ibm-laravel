@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\CategoryComponent;
 use App\Http\Livewire\DetailsComponent;
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\HomeComponent;
@@ -28,6 +29,7 @@ Route::get('/shop', ShopComponent::class);
 Route::get('/cart', CartComponent::class)->name('product.cart');
 Route::get('/checkout', CheckoutComponent::class);
 Route::get('/product/{slug}',DetailsComponent::class)->name('product.details');
+Route::get('/product-category/{category_slug}', CategoryComponent::class)->name('product.category');
 
 
 

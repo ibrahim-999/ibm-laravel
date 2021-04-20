@@ -25,3 +25,4 @@ class  DetailsComponent extends Component
         return view('livewire.details-component',['product'=>$product,'popular_products'=>$popular_products, 'related_products'=>$related_products])->layout('layouts.base');
     }
 }
+//

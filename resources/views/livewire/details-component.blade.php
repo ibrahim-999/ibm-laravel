@@ -44,7 +44,7 @@
                             <span>Quantity:</span>
                             <div class="quantity-input">
                                 <input type="text" name="product-quatity" value="1" data-max="120" pattern="[0-9]*" >
-
+                                <!---->
                                 <a class="btn btn-reduce" href="#"></a>
                                 <a class="btn btn-increase" href="#"></a>
                             </div>

@@ -142,7 +142,6 @@
 
 						<div class="wrap-icon right-section">
                             @livewire('wishlist-count-component')
-
 							@livewire('cart-count-component')
 							<div class="wrap-icon-section show-up-after-1024">
 								<a href="#" class="mobile-navigation">

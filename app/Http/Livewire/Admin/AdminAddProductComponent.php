@@ -71,6 +71,7 @@ class AdminAddProductComponent extends Component
             'category_id' => 'required',
 
         ]);
+
         $product = new Product();
         $product->name = $this->name;
         $product->slug = $this->slug;
@@ -91,7 +92,7 @@ class AdminAddProductComponent extends Component
     }
     public function render()
     {
-        $categories = Category::All();
+        $categories = Category::all();
         return view('livewire.admin.admin-add-product-component', ['categories'=>$categories])->layout('layouts.base');
     }
 }

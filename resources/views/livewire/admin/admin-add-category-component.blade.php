@@ -14,8 +14,8 @@
                         </div>
                     </div>
                     <div class="panel-body">
-                        @if(\Illuminate\Support\Facades\Session::has('message'))
-                            <div class="alert alert-success" role="alert">{{\Illuminate\Support\Facades\Session::get('message')}}</div>
+                        @if(Session::has('message'))
+                            <div class="alert alert-success" role="alert">{{Session::get('message')}}</div>
                             @endif
                         <form class="form-horizontal" wire:submit.prevent="storeCategory">
                             <div class="form-group">

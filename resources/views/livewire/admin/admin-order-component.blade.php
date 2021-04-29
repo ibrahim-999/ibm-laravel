@@ -15,6 +15,9 @@
                         All Orders
                     </div>
                     <div class="panel-body">
+                        @if(Session::has('order_message'))
+                            <div class="alert alert-success" role="alert">{{Session::get('order_message')}}</div>
+                        @endif
                         <table class="table table-striped">
                             <thead>
                             <tr>
@@ -30,7 +33,7 @@
                                 <th>Zipcode</th>
                                 <th>Status</th>
                                 <th>Order Date</th>
-                                <th>Action</th>
+                                <th colspan="2" class="text-center">Action</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -49,6 +52,11 @@
                                     <td>{{$order->status}}</td>
                                     <td>{{$order->created_at}}</td>
                                     <td><a href="{{route('admin.orderdetails',['order_id'=>$order->id])}}" class="btn btn-info btn-sm">Details</a></td>
+                                    <td>
+                                               <a href="#" wire:click.prevent="updateOrderStatus({{$order->id}},'delivered')" class="btn btn-success btn-sm">Delivered</a>
+                                               <br><br>
+                                               <a href="#" wire:click.prevent="updateOrderStatus({{$order->id}},'canceled')" class="btn btn-danger btn-sm">Canceled</a>
+                                    </td>
                                 </tr>
                             @endforeach
                             </tbody>

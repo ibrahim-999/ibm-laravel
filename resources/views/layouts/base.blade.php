@@ -185,7 +185,7 @@
 									<a href="/" class="link-term mercado-item-title"><i class="fa fa-home" aria-hidden="true"></i></a>
 								</li>
 								<li class="menu-item">
-									<a href="about-us.html" class="link-term mercado-item-title">About Us</a>
+									<a href="/about-us" class="link-term mercado-item-title">About Us</a>
 								</li>
 								<li class="menu-item">
 									<a href="/shop" class="link-term mercado-item-title">Shop</a>
@@ -197,8 +197,9 @@
 									<a href="/checkout" class="link-term mercado-item-title">Checkout</a>
 								</li>
 								<li class="menu-item">
-									<a href="contact-us.html" class="link-term mercado-item-title">Contact Us</a>
+									<a href="/contact-us" class="link-term mercado-item-title">Contact Us</a>
 								</li>
+
 							</ul>
 						</div>
 					</div>
@@ -450,9 +451,9 @@
 					<div class="coppy-right-item item-right">
 						<div class="wrap-nav horizontal-nav">
 							<ul>
-								<li class="menu-item"><a href="about-us.html" class="link-term">About us</a></li>
+								<li class="menu-item"><a href="/about-us" class="link-term">About us</a></li>
 								<li class="menu-item"><a href="privacy-policy.html" class="link-term">Privacy Policy</a></li>
-								<li class="menu-item"><a href="terms-conditions.html" class="link-term">Terms & Conditions</a></li>
+								<li class="menu-item"><a href="/terms-of-conditions" class="link-term">Terms & Conditions</a></li>
 								<li class="menu-item"><a href="return-policy.html" class="link-term">Return Policy</a></li>
 							</ul>
 						</div>

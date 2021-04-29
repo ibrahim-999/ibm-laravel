@@ -46,6 +46,9 @@ Route::get('/product/{slug}',DetailsComponent::class)->name('product.details');
 Route::get('/product-category/{category_slug}', CategoryComponent::class)->name('product.category');
 Route::get('/wishlist', WishlistComponent::class)->name('product.wishlist');
 Route::get('/thank-you',\App\Http\Livewire\ThankyouComponent::class)->name('thankyou');
+Route::get('/terms-of-conditions',\App\Http\Livewire\TermsOfConditionsComponent::class)->name('termsofconditions');
+Route::get('/contact-us',\App\Http\Livewire\ContactUsComponent::class)->name('contactus');
+Route::get('/about-us',\App\Http\Livewire\AboutUsComponent::class)->name('aboutus');
 
 
 

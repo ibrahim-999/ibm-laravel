@@ -47,7 +47,7 @@ class AdminEditProductComponent extends Component
         $this->product_id= $product->id;
     }
 
-    public function generateSlug()
+        public function generateSlug()
     {
         $this->slug = Str::slug($this->name,'-');
     }
@@ -108,7 +108,7 @@ class AdminEditProductComponent extends Component
 
     public function render()
     {
-        $categories = Category::All();
+        $categories = Category::all();
         return view('livewire.admin.admin-edit-product-component',['categories'=>$categories])->layout('layouts.base');
     }
 }

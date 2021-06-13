@@ -63,6 +63,8 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function(){
     Route::get('/user/orders',\App\Http\Livewire\User\UserOrdersComponent::class)->name('user.orders');
     Route::get('/user/orders/{order_id}',\App\Http\Livewire\User\UserOrderDetailsComponent::class)->name('user.orderdetails');
     Route::get('/user/review/{order_item_id}',\App\Http\Livewire\User\UserReviewComponent::class)->name('user.review');
+    Route::get('/user/change-password',\App\Http\Livewire\User\UserChangePasswordComponent::class)->name('user.changePassword');
+
 });
 
 //For admin

@@ -88,14 +88,13 @@ Route::middleware(['auth:sanctum', 'verified', 'authadmin'])->group(function(){
     Route::get('/admin/coupons', \App\Http\Livewire\Admin\AdminCouponsComponent::class)->name('admin.coupons');
     Route::get('/admin/coupon/add', \App\Http\Livewire\Admin\AdminAddCouponsComponent::class)->name('admin.addcoupon');
     Route::get('/admin/coupon/edit/{coupon_id}', \App\Http\Livewire\Admin\AdminEditCouponsComponent::class)->name('admin.editcoupon');
-    Route::get('/admin/contact-us', \App\Http\Livewire\Admin\AdminContactComponent::class)->name('admin.contact');
 
     Route::get('/admin/orders',\App\Http\Livewire\Admin\AdminOrderComponent::class )->name('admin.orders');
-    Route::get('/admin/{order_id}', \App\Http\Livewire\Admin\AdminOrderDetailsComponent::class)->name('admin.orderdetails');
+    Route::get('/admin/orders/{order_id}', \App\Http\Livewire\Admin\AdminOrderDetailsComponent::class)->name('admin.orderdetails');
 
+    Route::get('/admin/contact-us', \App\Http\Livewire\Admin\AdminContactComponent::class)->name('admin.contact');
 
-
-
+    Route::get('/admin/settings',\App\Http\Livewire\Admin\AdminSettingComponent::class )->name('admin.settings');
 });
 
 

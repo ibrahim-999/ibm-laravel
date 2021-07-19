@@ -110,7 +110,7 @@
                                 <div class="col-md-4">
                                     <input type="file" class="input-file" wire:model="image">
                                     @if($image)
-                                        <img src="{{$image->temporaryUrl()}}" width="120">
+                                        <img src="{{$image->temporaryUrl()}}" width="120"/>
                                         @endif
                                     @error('image') <p class="text-danger">{{$message}}</p>@enderror
                                 </div>
@@ -122,7 +122,7 @@
                                     <input type="file" class="input-file" wire:model="images" multiple>
                                     @if($images)
                                         @foreach($images as $image)
-                                            <img src="{{$image->temporaryUrl()}}" width="120">
+                                            <img src="{{$image->temporaryUrl()}}" width="120"/>
                                         @endforeach
                                     @endif
                                     @error('images') <p class="text-danger">{{$message}}</p>@enderror
